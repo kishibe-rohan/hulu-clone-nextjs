@@ -22,7 +22,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         <p className="truncate max-w-md text-gray-300 opacity-0 group-hover:opacity-100">
           {result.overview}
         </p>
-        <h2 className="mt-1 text-2xl transition-all duration-100 ease-in-out group-hover:font-extrabold ">
+        <h2 className="mt-1 text-2xl transition-all duration-100 ease-in-out group-hover:text-blue-300 ">
           {result.title || result.original_name}
         </h2>
         <p className="flex items-center opacity-0 group-hover:opacity-100">
@@ -36,4 +36,5 @@ const Thumbnail = forwardRef(({ result }, ref) => {
   );
 });
 
+Thumbnail.displayName = "Thumbnail";
 export default Thumbnail;
